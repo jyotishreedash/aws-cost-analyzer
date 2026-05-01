@@ -133,6 +133,9 @@ python -m pytest tests/ -v
 
 Built from real-world experience reducing AWS cloud costs by **45.7%** at a production environment through IaC optimization and resource rightsizing. This tool automates the discovery phase of that work.
 
+## 📸 Sample Report
+![AWS Cost Analyzer Report](assets/screenshot.png)
+
 ---
 
 ## 📄 License
