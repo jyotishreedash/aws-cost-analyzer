@@ -323,7 +323,7 @@ def generate_html_report(data: Dict, output_path: str = "reports/cost_report.htm
 </body>
 </html>"""
 
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 
     return output_path
