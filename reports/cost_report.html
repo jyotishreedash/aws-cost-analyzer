@@ -114,7 +114,7 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem; font-weight: 700;
     font-family: 'IBM Plex Mono', monospace;
-    background: conic-gradient(var(--green) 100%, var(--border) 0);
+    background: conic-gradient(var(--green) 90%, var(--border) 0);
     position: relative;
   }
 
@@ -149,12 +149,12 @@
 <div class="header">
   <div>
     <h1>⚡ AWS Cost Analyzer</h1>
-    <p>Generated on May 01, 2026 at 11:02 UTC · Period: N/A</p>
+    <p>Generated on May 01, 2026 at 11:22 UTC · Period: N/A</p>
   </div>
   <div style="display:flex; align-items:center; gap:1.2rem;">
     <div>
       <div class="stat-label">Health Score</div>
-      <div class="health-ring"><div class="health-ring-inner">100</div></div>
+      <div class="health-ring"><div class="health-ring-inner">90</div></div>
     </div>
   </div>
 </div>
@@ -168,8 +168,8 @@
   </div>
   <div class="card stat-card">
     <div class="stat-label">EC2 Instances</div>
-    <div class="stat-value">0</div>
-    <div class="stat-sub">0 idle · 0 underutilized</div>
+    <div class="stat-value">1</div>
+    <div class="stat-sub">1 idle · 0 underutilized</div>
   </div>
   <div class="card stat-card">
     <div class="stat-label">S3 Buckets</div>
@@ -188,7 +188,7 @@
   <div class="section-title"><span class="dot"></span>Issue Summary</div>
   <div class="summary-grid">
     <div class="summary-item">
-      <div class="summary-num num-red">0</div>
+      <div class="summary-num num-red">1</div>
       <div class="summary-label">Idle EC2 Instances</div>
     </div>
     <div class="summary-item">
@@ -213,7 +213,15 @@
     <div style="overflow-x:auto;">
       <table>
         <thead><tr><th>ID</th><th>Name</th><th>Type</th><th>State</th><th>Avg CPU</th><th>Status</th></tr></thead>
-        <tbody><tr><td colspan="6" style="color:var(--muted);text-align:center;">No instances found</td></tr></tbody>
+        <tbody>
+        <tr>
+            <td><code>i-06d3a3b6535047c1f</code></td>
+            <td>test-server</td>
+            <td>t3.micro</td>
+            <td>running</td>
+            <td>0.63%</td>
+            <td><span class="badge badge-red">idle</span></td>
+        </tr></tbody>
       </table>
     </div>
   </div>
