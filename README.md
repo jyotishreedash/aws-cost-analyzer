@@ -64,7 +64,7 @@ Options:
 
 ```bash
 # Use a specific AWS profile and region
-python main.py --profile prod --region ap-south-1
+python main.py --profile prod --region ap-southeast-2
 
 # Save report to a custom location
 python main.py --output /tmp/my-report.html
